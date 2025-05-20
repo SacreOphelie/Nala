@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Tuffy", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: rgb(238, 44, 212); */
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+nav img{
+    width: 200px;
+    margin: 0 25px;
+
+}
+
+nav ul{
+    /* background-color: blanchedalmond; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 850px;
+}
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    transition: all 1s;
+    border-radius: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition: all 1s;
+}
+
+.slide{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home{
+    background-color: rgb(253, 214, 169);
+    background-image: url(images/home_background.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#about{
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+hr{
+    width: 500px;
+    border: solid 0,5px black;
+}
+
+h3{
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: "Style Script", cursive;
+}
+
+h1{
+    font-family: "Style Script", cursive;
+    font-size: 50px;
+}
+
+#about h3{
+    margin-top: 150px;
+}
+
+#about img{
+    width: 300px;
+    margin-top: 50px;
+}
+
+#about p{
+    width: 500px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+#galerie{
+    background-color: rgb(253, 214, 169);
+    flex-direction: column;
+}
+
+#galerie h1{
+    margin-top: 100px;
+}
+
+.group-images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    /* background-color: aqua; */
+    margin-top: 25px;
+
+}
+
+.images{
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.images:nth-child(1){
+    border-top-left-radius: 150px;
+}
+.images:nth-child(4){
+    border-top-right-radius: 150px;
+}
+
+.images img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transition: all 1s;
+
+}
+
+.images img:hover{
+    width: 125%;
+}
+
+.images .overlay 
+{
+   margin-top: 0px;
+
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    transition: all 1s;
+    background-color: rgba(0, 0, 0, 0.692);
+    padding: 10px;
+}
+
+.images:hover .overlay{
+     margin-top: -100px;
+}
+
+#infos{
+    background-color: rgb(253, 214, 169);
+    justify-content: space-between;
+    object-fit: contain;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+.photo{
+    width:800px;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-top-left-radius: 150px;
+    align-self: flex-end;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.containinfo{
+    width: 40%;
+    margin-left: 150px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+.containinfo h2{
+    font-size: 80px;
+}
+
+.containinfo a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(151, 89, 38);
+    padding: 20px;
+    width: 250px;
+    margin-left: -150px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bolder;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    transition: all 1s;
+}
+
+.containinfo a:hover{
+    background-color: white;
+    color:rgb(151, 89, 38);
+}
